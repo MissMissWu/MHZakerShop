@@ -1,0 +1,134 @@
+//
+//  MHZakerShop.pch
+//  MHZakerShop
+//
+//  Created by apple on 16/9/3.
+//  Copyright © 2016年 Mike_He. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// 适配AF
+#ifndef TARGET_OS_IOS
+
+#define TARGET_OS_IOS TARGET_OS_IPHONE
+
+#endif
+
+#ifndef TARGET_OS_WATCH
+
+#define TARGET_OS_WATCH 0
+
+#endif
+
+
+// 日记输出宏
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define MHLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define MHLog(...)
+#endif
+
+// 打印方法
+#define MHLogFunc MHLog(@"%s", __func__)
+
+// KVO获取监听对象的属性 有自动提示
+// 宏里面的#，会自动把后面的参数变成c语言的字符串
+#define MHKeyPath(objc,keyPath) @(((void)objc.keyPath ,#keyPath))
+
+
+// 严谨的判断
+#define IS_IPAD   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH      ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT     ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0f)
+#define IS_IPHONE_5         (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0f)
+#define IS_IPHONE_5_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 667.0f)
+
+#define IS_IPHONE_6         (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0f)
+#define IS_IPHONE_6P        (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0f)
+
+
+
+// 颜色
+#define MHColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 颜色+透明度
+#define MHAlphaColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+
+// 随机色
+#define MHRandomColor MHColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+// 根据rgbValue获取值
+#define MHColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+// 是否为iOS7+
+#define MHIOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 是否为4inch
+#define MHFourInch ([UIScreen mainScreen].bounds.size.height == 568.0)
+
+// 屏幕总尺寸
+#define MHMainScreenBounds  [UIScreen mainScreen].bounds
+#define MHMainScreenHeight  [UIScreen mainScreen].bounds.size.height
+#define MHMainScreenWidth   [UIScreen mainScreen].bounds.size.width
+
+// IOS版本
+#define MHIOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+// 销毁打印
+#define MHDealloc MHLog(@"=========+++ %@  销毁了 +++========",[self class])
+
+
+
+// 是否为空对象
+#define MHObjectIsNil(__object)  ((nil == __object) || [__object isKindOfClass:[NSNull class]])
+
+// 字符串为空
+#define MHStringIsEmpty(__string) ((__string.length == 0) || MHObjectIsNil(__string))
+
+// 字符串不为空
+#define MHStringIsNotEmpty(__string)  (!MHStringIsEmpty(__string))
+
+// 数组为空
+#define MHArrayIsEmpty(__array) ((MHObjectIsNil(__array)) || (__array.count==0))
+
+// 取消ios7以后下移
+#define MHDisabledAutomaticallyAdjustsScrollViewInsets \
+if (MHIOSVersion>=7.0) {\
+self.automaticallyAdjustsScrollViewInsets = NO;\
+}
+
+// AppCaches 文件夹路径
+#define MHCachesDirectory [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
+
+// App DocumentDirectory 文件夹路径
+#define MHDocumentDirectory [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) lastObject]
+
+// 系统放大倍数
+#define MHScale [[UIScreen mainScreen] scale]
+
+/**
+ *  Frame PX  ---> Pt
+ */
+#define MHPxConvertPt(__Px) ((__Px) * kMainScreenWidth/640.0f)
+
+
+// 常用的
+#import "MHCommon.h"
+
+#endif
