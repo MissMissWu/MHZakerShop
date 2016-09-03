@@ -18,6 +18,7 @@
 		18DD4EF71D7A92490071F1F7 /* MHTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD4EF61D7A92490071F1F7 /* MHTabBarButton.m */; };
 		18DD4EFA1D7A93380071F1F7 /* MHCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD4EF91D7A93380071F1F7 /* MHCommon.m */; };
 		18DD4EFF1D7A9A030071F1F7 /* UIFont+MHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD4EFE1D7A9A030071F1F7 /* UIFont+MHExtension.m */; };
+		18DD4F021D7AD2850071F1F7 /* MHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD4F011D7AD2850071F1F7 /* MHNavigationController.m */; };
 		18E5A11F1D79706A00910495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5A11E1D79706A00910495 /* main.m */; };
 		18E5A1221D79706A00910495 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5A1211D79706A00910495 /* AppDelegate.m */; };
 		18E5A12A1D79706A00910495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E5A1291D79706A00910495 /* Assets.xcassets */; };
@@ -68,6 +69,8 @@
 		18DD4EFB1D7A93780071F1F7 /* MHZakerShop.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHZakerShop.pch; sourceTree = "<group>"; };
 		18DD4EFD1D7A9A030071F1F7 /* UIFont+MHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+MHExtension.h"; sourceTree = "<group>"; };
 		18DD4EFE1D7A9A030071F1F7 /* UIFont+MHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MHExtension.m"; sourceTree = "<group>"; };
+		18DD4F001D7AD2850071F1F7 /* MHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavigationController.h; sourceTree = "<group>"; };
+		18DD4F011D7AD2850071F1F7 /* MHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNavigationController.m; sourceTree = "<group>"; };
 		18E5A11A1D79706A00910495 /* MHZakerShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHZakerShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E5A11E1D79706A00910495 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E5A1201D79706A00910495 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 				18DD4EE11D7A7ACF0071F1F7 /* MHTabBarController.m */,
 				18DD4EE31D7A7C160071F1F7 /* MHViewController.h */,
 				18DD4EE41D7A7C160071F1F7 /* MHViewController.m */,
+				18DD4F001D7AD2850071F1F7 /* MHNavigationController.h */,
+				18DD4F011D7AD2850071F1F7 /* MHNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -691,6 +696,7 @@
 			files = (
 				18DD4EF11D7A7D1F0071F1F7 /* MHShopController.m in Sources */,
 				18DD4EF41D7A7D520071F1F7 /* MHTopicController.m in Sources */,
+				18DD4F021D7AD2850071F1F7 /* MHNavigationController.m in Sources */,
 				18DD4EE51D7A7C160071F1F7 /* MHViewController.m in Sources */,
 				18E5A1221D79706A00910495 /* AppDelegate.m in Sources */,
 				18DD4EEE1D7A7CC50071F1F7 /* MHSettingController.m in Sources */,

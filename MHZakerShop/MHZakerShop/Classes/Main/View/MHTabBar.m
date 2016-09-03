@@ -148,8 +148,9 @@
     
     CGFloat buttonCount = count ;
     
-    CGFloat buttonW = (self.frame.size.width - (buttonCount-1)*separateLineW)/buttonCount;
+    CGFloat buttonW = (self.frame.size.width -(buttonCount-1)*separateLineW)/buttonCount;
     CGFloat buttonH = self.frame.size.height;
+    
     
     // 布局子控件
     for (NSInteger i = 0 ; i < count; i++)

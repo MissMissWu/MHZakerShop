@@ -13,7 +13,7 @@
 #import "MHShopController.h"
 #import "MHTopicController.h"
 #import "MHSettingController.h"
-
+#import "MHNavigationController.h"
 
 @interface MHTabBarController () <MHTabBarDelegate>
 
@@ -88,8 +88,12 @@
 #pragma mark - 添加一个控制器
 - (void) _addChildControllerWithController:(UIViewController *)controller title:(NSString *)title
 {
+    // 设置主题
     controller.title = title;
-    [self addChildViewController:controller];
+    // 添加为tabbar控制器的子控制器
+    MHNavigationController *nav = [[MHNavigationController alloc] initWithRootViewController:controller];
+    [self addChildViewController:nav];
+
 }
 
 #pragma mark - MHTabBarDelegate
