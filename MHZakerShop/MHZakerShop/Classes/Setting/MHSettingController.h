@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mike_He. All rights reserved.
 //  设置界面
 
-#import "MHViewController.h"
+#import "MHTopToolBarController.h"
 
-@interface MHSettingController : MHViewController
+@interface MHSettingController : MHTopToolBarController
 
 @end

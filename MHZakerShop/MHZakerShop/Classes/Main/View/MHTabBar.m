@@ -74,7 +74,7 @@
     [button setBackgroundImage:[UIImage imageWithColor:MHGlobalPinkColor] forState:UIControlStateNormal];
     [button setBackgroundImage:[UIImage imageWithColor:MHGlobalDeepPinkColor] forState:UIControlStateSelected];
     
-    button.titleLabel.font = MHRegularFont(17.0f);
+    button.titleLabel.font = MHMediumFont(14.0f);
     
     button.tag = tag;
     [self addSubview:button];
@@ -144,7 +144,7 @@
     NSInteger count = self.subviews.count;
     
     // 分割线宽度
-    CGFloat separateLineW = .2f;
+    CGFloat separateLineW = .5f;
     
     CGFloat buttonCount = count ;
     

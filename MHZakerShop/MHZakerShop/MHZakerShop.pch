@@ -91,7 +91,7 @@
 #define MHIOSVersion [[[UIDevice currentDevice] systemVersion] floatValue]
 
 // 销毁打印
-#define MHDealloc MHLog(@"=========+++ %@  销毁了 +++========",[self class])
+#define MHDealloc MHLog(@"\n =========+++ %@  销毁了 +++======== \n",[self class])
 
 
 
@@ -125,7 +125,7 @@ self.automaticallyAdjustsScrollViewInsets = NO;\
 /**
  *  Frame PX  ---> Pt
  */
-#define MHPxConvertPt(__Px) ((__Px) * kMainScreenWidth/640.0f)
+#define MHPxConvertPt(__Px) ((__Px) * MHMainScreenWidth/640.0f)
 
 
 // 常用的

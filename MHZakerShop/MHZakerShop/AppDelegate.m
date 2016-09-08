@@ -20,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    MHLog(@"\n\n  UIScreen.size  ------  %@ \n\n", NSStringFromCGSize([UIScreen mainScreen].bounds.size));
+    
     // 1.创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;

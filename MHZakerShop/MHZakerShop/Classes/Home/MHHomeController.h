@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mike_He. All rights reserved.
 //  主页
 
-#import "MHViewController.h"
+#import "MHTopToolBarController.h"
 
-@interface MHHomeController : MHViewController
+@interface MHHomeController : MHTopToolBarController
 
 @end

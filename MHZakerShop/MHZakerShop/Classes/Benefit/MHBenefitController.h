@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mike_He. All rights reserved.
 //  福利
 
-#import "MHViewController.h"
+#import "MHTopToolBarController.h"
 
-@interface MHBenefitController : MHViewController
+@interface MHBenefitController : MHTopToolBarController
 
 @end

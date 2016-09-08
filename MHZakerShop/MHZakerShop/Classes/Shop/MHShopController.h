@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Mike_He. All rights reserved.
 //  好店
 
-#import "MHViewController.h"
+#import "MHTopToolBarController.h"
 
-@interface MHShopController : MHViewController
+@interface MHShopController : MHTopToolBarController
 
 @end

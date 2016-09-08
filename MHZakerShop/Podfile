@@ -35,4 +35,6 @@ pod 'MHCycleScrollView', '~> 1.0.0'
 #根据颜色 生成一张图片
 pod 'UIImage+ImageWithColor', '~> 1.3'
 
+#HUD
+pod 'MBProgressHUD', '~> 1.0.0'
 end

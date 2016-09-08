@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
 // 苹方字体分类
 #import "UIFont+MHExtension.h"
 
@@ -17,9 +18,35 @@
 // 根据颜色生成图片
 #import "UIImage+ImageWithColor.h"
 
+// image分类
+#import "UIImage+MH.h"
+
+// UIBarButtonItem分类
+#import "UIBarButtonItem+MHExtension.h"
+
+// UIView的分类
+#import "UIView+MH.h"
+
+// 异步下载网络图片
+#import "MHWebImageTool.h"
+
+/** 绑定 */
+typedef NS_ENUM(NSUInteger, MHBindType) {
+    MHBindTypeNone      = 10, // 无
+    MHBindTypeSinaWeibo = 11, // 绑定新浪微博
+    MHBindTypeTaoBao  = 12, // 绑定支付宝
+};
+
+/** wepView翻页 */
+typedef NS_ENUM(NSUInteger, MHWebViewPageType) {
+    MHWebViewPageTypeNone = 15, // 无翻页
+    MHWebViewPageTypeNext = 16, // 下一页,
+    MHWebViewPageTypePre = 17, //  上一页,
+};
 
 
 // 常量
+
 
 /**
  *  通知中心

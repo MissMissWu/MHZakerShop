@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D04CD7270E215B17054A7BD1F3F426074EA41CE9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d6bcb535-778d-0147-a09e-94abc38d1ac8++4419" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D04CD7270E215B17054A7BD1F3F426074EA41CE9" : 0,
+    "d6bcb535-778d-0147-a09e-94abc38d1ac8++4419" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "531234C5-87C0-4A21-96A6-81F533B62067",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D04CD7270E215B17054A7BD1F3F426074EA41CE9" : "MHZakerShop\/",
+    "d6bcb535-778d-0147-a09e-94abc38d1ac8++4419" : "MHZakerShop\/MHZakerShop\/MHZakerShop\/Classes\/Main\/Lib\/MBProgressHUD+MH\/MBProgressHUD.bundle\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MHZakerShop",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MHZakerShop\/MHZakerShop.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CoderMikeHe\/MHZakerShop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D04CD7270E215B17054A7BD1F3F426074EA41CE9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/112.74.99.76\/svn\/iOS_Code",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d6bcb535-778d-0147-a09e-94abc38d1ac8++4419"
+    }
+  ]
+}
