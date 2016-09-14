@@ -150,7 +150,7 @@ typedef void(^MHResponseFailure)(NSError *error);
 /**
  *	默认只缓存GET请求的数据，对于POST请求是不缓存的。如果要缓存POST获取的数据，需要手动调用设置
  *  对JSON类型数据有效，对于PLIST、XML不确定！
- *	@param isCacheGet			默认为 YES
+ *	@param isCacheGet			默认为 NO
  *	@param isCachePost	        默认为 NO
  */
 + (void)cacheGetRequestData:(BOOL)isCacheGet shouldCachePostData:(BOOL)isCachePost;

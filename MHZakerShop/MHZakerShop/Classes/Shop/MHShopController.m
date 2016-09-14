@@ -16,12 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // 初始化
+    [self _setup];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-
+#pragma mark - 初始化
+- (void)_setup
+{
+    self.dismissEnabled = NO;
+}
 
 @end

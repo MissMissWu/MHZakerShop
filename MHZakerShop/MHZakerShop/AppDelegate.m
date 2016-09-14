@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 
 #import "MHTabBarController.h"
+#import "MHHttpTool.h"
+#import "MHDataBaseTool.h"
 
 
 @interface AppDelegate ()
@@ -34,6 +36,11 @@
     self.window.rootViewController = [[MHTabBarController alloc] init];
     
     
+    // 4.开启网络请求打印数据
+    [MHHttpTool enableInterfaceDebug:YES];
+    
+    // 5.请求数据
+    [MHDataBaseTool sharedDataBase];
     
     return YES;
 }

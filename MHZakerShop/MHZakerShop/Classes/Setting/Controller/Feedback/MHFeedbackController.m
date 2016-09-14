@@ -65,6 +65,7 @@
 {
     MHLogFunc;
 }
+
 // 页面加载失败时调用
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation
 {

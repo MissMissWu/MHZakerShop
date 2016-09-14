@@ -7,6 +7,8 @@
 //
 
 #import "MHHomeController.h"
+#import "MHCycleScrollView.h"
+
 
 @interface MHHomeController ()
 
@@ -16,22 +18,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    // 初始化
+    [self _setup];
+    
+    // 初始化子控件
+    [self _setupSubViews];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - public 
+- (void)reloadBannersData
+{
+    
 }
-*/
+
+- (void)reloadBlocksData
+{
+    
+}
+
+#pragma mark - 初始化
+- (void)_setup
+{
+    self.dismissEnabled = NO;
+}
+
+#pragma mark - 初始化子控件
+- (void)_setupSubViews
+{
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, MHMainScreenWidth, MHMainScreenHeight)];
+    scrollView.backgroundColor = MHGlobalViewBackgroundColor;
+    [self.view addSubview:scrollView];
+}
 
 @end

@@ -7,7 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MHSettingController">
             <connections>
-                <outlet property="view" destination="Ga2-6L-mlo" id="OEc-ui-sJ9"/>
+                <outlet property="clearCacheBtn" destination="MIL-oa-ZKt" id="w8R-NS-Vf7"/>
+                <outlet property="view" destination="Ga2-6L-mlo" id="g7t-pJ-HZ4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

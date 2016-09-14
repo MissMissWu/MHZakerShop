@@ -20,4 +20,7 @@
  *  @param rightButtonHandler 右边按钮的点击事件
  */
 + (void)alertWithPresentedController:(UIViewController *)presentedController title:(NSString *)title message:(NSString *)message leftButtonTitle:(NSString *)leftButtonTitle rightButtonTitle:(NSString *)rightButtonTitle leftButtonHandler:(void (^)())leftButtonHandler rightButtonHandler:(void(^)())rightButtonHandler;
+
+
+
 @end

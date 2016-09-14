@@ -24,6 +24,7 @@
 #import "MHFeedbackController.h"
 #import "MHAlertTool.h"
 @interface MHSettingController ()
+@property (weak, nonatomic) IBOutlet UIButton *clearCacheBtn;
 
 @end
 
@@ -161,7 +162,7 @@
 - (IBAction)_clearCache {
     
     //???:  由于这里大多数是图片缓存，而我们又采用的是SDWebImage来异步缓存的图片，故这里清理缓存 应该是清理SDWebImage的缓存
-    
+    self.clearCacheBtn.userInteractionEnabled = NO;
     
     __weak typeof(self) weakSelf =  self;
     [MHAlertTool alertWithPresentedController:self title:nil message:@"确定要清除所有缓存文件吗？" leftButtonTitle:@"取消" rightButtonTitle:@"确定" leftButtonHandler:nil rightButtonHandler:^{
@@ -169,15 +170,13 @@
         // 清理SDWebImage的缓存
         [MHWebImageTool clearWebImageCache];
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            
-            
-        });
+       
         //提示
         [weakSelf _showClearAllCacheSuccess];
         
         
     }];
+    
 
 }
 
@@ -229,7 +228,7 @@
     
     // 6.动画
     CGFloat duration = 0.1;
-    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+    [UIView animateWithDuration:0.25f delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         // 往上移动一个
         label.transform = CGAffineTransformMakeTranslation(0, -78.0f);
     } completion:^(BOOL finished) { // 向下移动完毕
@@ -244,6 +243,8 @@
             
             // 删除控件
             [label removeFromSuperview];
+            
+            self.clearCacheBtn.userInteractionEnabled = YES;
         }];
     }];
 }

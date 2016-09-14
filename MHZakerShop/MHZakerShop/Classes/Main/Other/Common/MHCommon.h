@@ -44,6 +44,35 @@ typedef NS_ENUM(NSUInteger, MHWebViewPageType) {
     MHWebViewPageTypePre = 17, //  上一页,
 };
 
+/**商品Ulr是web_url 还是api_url */
+typedef NS_ENUM(NSUInteger, MHGoodsUrlType) {
+    MHGoodsUrlTypeNone = 20,
+    MHGoodsUrlTypeApi = 21, //api_url
+    MHGoodsUrlTypeWeb = 22, //web_url
+};
+
+/** 请求Url */
+UIKIT_EXTERN NSString  * const MHAllDataUrl;
+
+/** 主页banner滚动视图数据加载完毕 */
+UIKIT_EXTERN NSString * const MHHomeBannersDataDidLoad ;
+
+/** 好店banner滚动视图数据加载完毕 */
+UIKIT_EXTERN NSString * const MHShopBannersDataDidLoad ;
+
+
+
+/** 主页blockData数据加载完毕 */
+UIKIT_EXTERN NSString * const MHHomeBlocksDataDidLoad   ;
+
+/** 好店blockData数据加载完毕 */
+UIKIT_EXTERN NSString * const MHShopBlocksDataDidLoad   ;
+
+/** 福利blockData数据加载完毕 */
+UIKIT_EXTERN NSString * const MHBenefitBlocksDataDidLoad;
+
+/** 好店blockData数据加载完毕 */
+UIKIT_EXTERN NSString * const MHTopicBlocksDataDidLoad  ;
 
 // 常量
 

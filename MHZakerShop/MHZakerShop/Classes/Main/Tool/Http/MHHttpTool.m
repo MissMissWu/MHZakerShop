@@ -109,8 +109,8 @@ static BOOL isBaseURLChanged_ = YES;
 static NSTimeInterval timeout_ = 60.0f;
 /** 存储着所有的 请求队列 */
 static NSMutableArray *requestTasks_ = nil;
-/** 缓存get请求数据 默认是 YES */
-static BOOL cacheGetData_ = YES;
+/** 缓存get请求数据 默认是 NO */
+static BOOL cacheGetData_ = NO;
 /** 缓存Post请求数据 默认是 NO*/
 static BOOL cachePostData_ = NO;
 /** 是否当request cancel的时候的是否需要回调*/

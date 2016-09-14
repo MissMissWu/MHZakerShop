@@ -129,7 +129,7 @@ static CGFloat const MHTabBarHeight = 49;
     hud.userInteractionEnabled = NO;
     // Configure for text only and offset down
     hud.mode = MBProgressHUDModeText;
-    hud.labelText = hint;
+    hud.label.text = hint;
     hud.opacity = 0.45;
     hud.margin = 10.f;
     hud.yOffset = yOffset;

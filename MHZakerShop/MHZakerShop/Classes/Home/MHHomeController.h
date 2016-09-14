@@ -9,5 +9,14 @@
 #import "MHTopToolBarController.h"
 
 @interface MHHomeController : MHTopToolBarController
+/**
+ *  刷新主页数据
+ */
+- (void)reloadBlocksData;
 
+
+/**
+ *  刷新主页banner
+ */
+- (void)reloadBannersData;
 @end

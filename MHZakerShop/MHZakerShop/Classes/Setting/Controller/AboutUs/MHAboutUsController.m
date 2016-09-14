@@ -18,7 +18,6 @@
 {
     [super viewDidLoad];
     
-    MHLog(@"\n self.presentedViewController = %@ \n self.presentingViewController = %@ \n self.parentViewController = %@ \n self.modalViewController  = %@ \n" , self.presentedViewController , self.presentingViewController , self.parentViewController , self.modalViewController);
 }
 
 - (void)didReceiveMemoryWarning

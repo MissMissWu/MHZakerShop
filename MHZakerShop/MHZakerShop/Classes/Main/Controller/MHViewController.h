@@ -10,4 +10,9 @@
 
 @interface MHViewController : UIViewController
 
+
+/** 是否支持向下轻扫 dismiss控制器 默认YES */
+@property (nonatomic , assign , getter=isDismissEnabled) BOOL dismissEnabled;
+
+
 @end

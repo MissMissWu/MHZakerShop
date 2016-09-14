@@ -42,7 +42,7 @@
     
     
     
-    UIBarButtonItem *sortItem = [UIBarButtonItem mh_itemWithImageName:@"page_red_sort" target:self action:@selector(_sort)];
+    UIBarButtonItem *sortItem = [UIBarButtonItem mh_itemWithImageName:@"page_red_sort" target:self action:@selector(_mh_sort)];
     UIBarButtonItem *rightNegativeSpacerItem = [[UIBarButtonItem alloc]   initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace   target:nil action:nil];
     rightNegativeSpacerItem.width = -20;
     self.navigationItem.rightBarButtonItems = @[rightNegativeSpacerItem,sortItem];
@@ -62,7 +62,7 @@
 }
 
 
-- (void)_sort
+- (void)_mh_sort
 {
     MHLogFunc;
 
